@@ -8,5 +8,6 @@ defmodule ElixirRestApiWeb.Router do
   scope "/api", ElixirRestApiWeb do
     pipe_through :api
     get "/", DefaultController, :index
+    post "/accounts/create", AccountController, :create
   end
 end
